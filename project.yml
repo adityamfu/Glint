@@ -1,0 +1,27 @@
+name: Glint
+options:
+  deploymentTarget:
+    iOS: "18.0"
+targets:
+  Glint:
+    type: application
+    platform: iOS
+    sources:
+      - path: .
+        includes: ["*.swift", "Assets.xcassets"]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.adityamfu.glint
+        DEVELOPMENT_TEAM: B4L2D8S2YN
+        CODE_SIGN_STYLE: Automatic
+        SWIFT_VERSION: "6.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Glint
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "Glint butuh akses foto untuk menampilkan dan mengelola galerimu."
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
